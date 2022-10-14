@@ -1,0 +1,124 @@
+@import 'variables';
+// spacing
+
+.flow-content--xl > * + *  {
+	margin-top: 3rem;
+}
+.flow-content--l > * + *  {
+	margin-top: 2.5rem;
+}
+.flow-content--xm > * + *  {
+	margin-top: 2rem;
+}
+.flow-content--m > * + *  {
+	margin-top: 1.5rem;
+}
+.flow-content--s > * + *  {
+	margin-top: 1rem;
+}
+.flow-content--xs > * + *  {
+	margin-top: .5rem;
+}
+
+.px-1 {
+	padding: 0 1rem;
+}
+.px-2 {
+	padding: 0 2rem;
+}
+.px-3 {
+	padding: 0 3rem;
+}
+.py-1 {
+	padding:  1rem 0;
+}
+.py-2 {
+	padding:  2rem 0;
+}
+.py-3 {
+	padding:  3rem 0;
+}
+.p-1 {
+	padding:  1rem ;
+}
+.p-2 {
+	padding:  2rem ;
+}
+.p-3 {
+	padding:  3rem ;
+}
+
+
+// layout
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+.grid {
+	display: grid
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr))
+}
+
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr))
+}
+.grid--1x4 {
+	grid-template-columns: repeat(4, minmax(auto, 1fr))
+}
+
+
+// buttons
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	border-radius: .3rem;
+	padding: .5em 1.5em;
+	font-size: $normal-fs;
+	transition: background 250ms;
+	cursor: pointer;
+
+	&--primary {
+		background: $clr-primary;
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			background: darken($clr-primary, 10%);
+		}
+	}
+
+	&--dark {
+		background: $clr-dark;
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			background: lighten($clr-dark,5%);
+		}
+	}
+}
+
+// typography
+
+strong {
+	font-weight: 700;
+	color: $clr-dark;
+}
+
+.special-word {
+	color: $text-warning;
+}
+
+.text-center {
+	text-align: center;
+}
+
+

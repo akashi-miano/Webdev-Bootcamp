@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+		<link rel="stylesheet" href="css/main.css" media="all">
+		<script defer src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+		<script defer src="js/script.js"></script>
+		<title>Webdev Bootcamp</title>
+	</head>
+	<body>
+		<header class="hero">
+			<nav class="hero__nav">
+				<div class="container">
+					<a class="hero__logo" href="">Frontend Bootcamp</a>
+					<i class="bars fa-solid fa-bars"></i>
+					<ul class="hero__list">
+						<i class="close fa-solid fa-x"></i>
+						<li class="hero__item"><a href="#learn">What you 'll learn</a></li>
+						<li class="hero__item"><a href="#questions">Questions</a></li>
+						<li class="hero__item"><a href="#instructors">Instructors</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="hero__content-wrapper py-3">
+				<div class="hero__content container grid grid--1x2">
+					<div class="hero__content-text flow-content--m">
+						<h1 class="hero__title">Become a <span class="special-word">Web Developer</span> </h1>
+						<p class="hero__desc"> We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role </p>
+						<a class="hero__btn btn btn--primary" href="#">Start The Entrollment</a>
+					</div>
+					<div class="hero__content-img">
+						<img class="hero__img" src="img/showcase.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="modal">
+				<div class="modal__content">
+					<header class="modal__header">
+						<h2 class="modal__title">Modal title</h2>
+						<i class="modal__close fa-solid fa-xmark"></i>
+					</header>
+					<form class="modal__form" action="">
+						<div class="input-wrapper">
+							<label for="first-name">First Name:</label>
+							<input id="first-name" type="text" name="first-name">
+						</div>
+						<div class="input-wrapper">
+							<label for="">Last Name:</label>
+							<input id="last-name" type="text" name="last-name">
+						</div>
+						<div class="input-wrapper">
+							<label for="email">Email:</label>
+							<input id="email" type="email" name="email">
+						</div>
+						<div class="input-wrapper">
+							<label for="phone">Phone:</label>
+							<input id="phone" type="tel" name="">
+						</div>
+						<div class="btn-wrapper">
+							<button class="btn btn--dark modal__close">Close</button>
+							<button class="btn btn--primary"type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<section class="news">
+			<div class="news__content-wrapper py-2">
+				<div class="news__content container grid grid--1x2">
+					<p class="news__desc">Sign Up For Our Newsletter</p>
+					<form class="news__form" action="">
+						<div class="news__form-wrapper">
+							<input id="" type="email" name="email" placeholder="Enter Email">
+							<button type="submit" class="btn btn--dark">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section  class="learning py-3">
+			<div class="learning__card-wrapper container grid grid--1x3">
+				<div class="learning__card">
+					<div class="learning__card-content flow-content--s">
+						<i class="fa-solid fa-laptop"></i>
+						<h3 class="learning__card-title">Virtual</h3>
+						<p class="learning__card-desc"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas quidem possimus dolorum esse eligendi? </p>
+						<a class="btn btn--primary" href="#">Read More</a>
+					</div>
+				</div>
+				<div class="learning__card">
+					<div class="learning__card-content flow-content--s">
+						<i class="fa-solid fa-user"></i>
+						<h3 class="learning__card-title">Hybird</h3>
+						<p class="learning__card-desc"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas quidem possimus dolorum esse eligendi? </p>
+						<a class="btn btn--dark" href="#">Read More</a>
+					</div>
+				</div>
+				<div class="learning__card">
+					<div class="learning__card-content flow-content--s">
+						<i class="fa-solid fa-users"></i>
+						<h3 class="learning__card-title">In Person</h3>
+						<p class="learning__card-desc"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas quidem possimus dolorum esse eligendi? </p>
+						<a class="btn btn--primary" href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="learn" class="fundamentals py-3">
+			<div class="fundamentals__wrapper container">
+				<div class="fundamentals__content grid grid--1x2">
+					<div class="fundamentals__content-img_">
+						<img class="fundamentals__img" src="img/fundamentals.svg" alt="">
+					</div>
+					<div class="fundamentals__content-txt flow-content--s">
+						<h2 class="fundamentals__title">Learn The Fundamentals</h2>
+						<p class="fundamentals__sub-title"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique deleniti possimus magnam corporis ratione facere! </p>
+						<p class="fundamentals__desc"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis eius autem eveniet mollitia, at asperiores suscipit quae similique laboriosam iste minus placeat odit velit quos, nulla architecto amet voluptates? </p>
+						<a class="fundamentals__link btn" href="">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="react py-3">
+			<div class="react__content-wrapper"></div>
+			<div class="react__content grid grid--1x2 container">
+				<div class="react__content-txt flow-content--s">
+					<h2 class="react__title">Learn React</h2>
+					<p class="react__sub-title"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique deleniti possimus magnam corporis ratione facere! </p>
+					<p class="react__desc"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis eius autem eveniet mollitia, at asperiores suscipit quae similique laboriosam iste minus placeat odit velit quos, nulla architecto amet voluptates? </p>
+					<div class="react__btn-wrapper">
+						<a class="btn btn--light" href="">Read More</a>
+					</div>
+				</div>
+				<div class="react__content-img_">
+					<img class="react__img" src="img/react.svg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section id="questions" class="faqs py-3">
+			<div class="faqs__content-wrapper container">
+				<div class="faqs__content flow-content--xm">
+					<h2 class="faqs__title">Frequently Asked Questions</h2>
+					<ul class="faqs__list">
+						<li class="faqs__item">Where exactly are you located?
+							<i class="fa-solid fa-chevron-down"></i>
+						</li>
+						<div class="faqs__list-desc-wrapper"><p class="faqs__desc">Ipsum lorem a pariatur accusantium consequuntur molestiae Rem necessitatibus dignissimos est laudantium quaerat Ipsum libero cum quia quas qui Voluptatem laboriosam maiores vero ipsum ratione explicabo Nam soluta est consectetur vel hic facere? Fuga nemo modi beatae facere quos, eveniet saepe nisi Magni aliquam expedita placeat fuga soluta Laboriosam recusandae incidunt optio veritatis soluta Beatae quia asperiores provident eaque quos. Quidem maiores voluptatum earum mollitia aliquid beatae Voluptatem ut et et unde dignissimos Labore officia harum laborum explicabo reiciendis. Fugiat quidem dolores nemo impedit ipsam. Corrupti dolorum ea nesciunt deserunt dolorem reiciendis similique Maxime voluptas explicabo ipsa voluptatum odit. Sunt</p></div>
+					</ul>
+					<ul class="faqs__list">
+						<li class="faqs__item">How much does it cost to attend?
+							<i class="fa-solid fa-chevron-down"></i>
+						</li>
+						<div class="faqs__list-desc-wrapper"><p class="faqs__desc">Ipsum lorem a pariatur accusantium consequuntur molestiae Rem necessitatibus dignissimos est laudantium quaerat Ipsum libero cum quia quas qui Voluptatem laboriosam maiores vero ipsum ratione explicabo Nam soluta est consectetur vel hic facere? Fuga nemo modi beatae facere quos, eveniet saepe nisi Magni aliquam expedita placeat fuga soluta Laboriosam recusandae incidunt optio veritatis soluta Beatae quia asperiores provident eaque quos. Quidem maiores voluptatum earum mollitia aliquid beatae Voluptatem ut et et unde dignissimos Labore officia harum laborum explicabo reiciendis. Fugiat quidem dolores nemo impedit ipsam. Corrupti dolorum ea nesciunt deserunt dolorem reiciendis similique Maxime voluptas explicabo ipsa voluptatum odit. Sunt</p></div>
+					</ul>
+					</ul>
+					<ul class="faqs__list">
+						<li class="faqs__item">What do i need to know?
+							<i class="fa-solid fa-chevron-down"></i>
+						</li>
+						<div class="faqs__list-desc-wrapper"><p class="faqs__desc">Ipsum lorem a pariatur accusantium consequuntur molestiae Rem necessitatibus dignissimos est laudantium quaerat Ipsum libero cum quia quas qui Voluptatem laboriosam maiores vero ipsum ratione explicabo Nam soluta est consectetur vel hic facere? Fuga nemo modi beatae facere quos, eveniet saepe nisi Magni aliquam expedita placeat fuga soluta Laboriosam recusandae incidunt optio veritatis soluta Beatae quia asperiores provident eaque quos. Quidem maiores voluptatum earum mollitia aliquid beatae Voluptatem ut et et unde dignissimos Labore officia harum laborum explicabo reiciendis. Fugiat quidem dolores nemo impedit ipsam. Corrupti dolorum ea nesciunt deserunt dolorem reiciendis similique Maxime voluptas explicabo ipsa voluptatum odit. Sunt</p></div>
+					</ul>
+					</ul>
+					<ul class="faqs__list">
+						<li class="faqs__item">How do i sign up?
+							<i class="fa-solid fa-chevron-down"></i>
+						</li>
+						<div class="faqs__list-desc-wrapper"><p class="faqs__desc">Ipsum lorem a pariatur accusantium consequuntur molestiae Rem necessitatibus dignissimos est laudantium quaerat Ipsum libero cum quia quas qui Voluptatem laboriosam maiores vero ipsum ratione explicabo Nam soluta est consectetur vel hic facere? Fuga nemo modi beatae facere quos, eveniet saepe nisi Magni aliquam expedita placeat fuga soluta Laboriosam recusandae incidunt optio veritatis soluta Beatae quia asperiores provident eaque quos. Quidem maiores voluptatum earum mollitia aliquid beatae Voluptatem ut et et unde dignissimos Labore officia harum laborum explicabo reiciendis. Fugiat quidem dolores nemo impedit ipsam. Corrupti dolorum ea nesciunt deserunt dolorem reiciendis similique Maxime voluptas explicabo ipsa voluptatum odit. Sunt</p></div>
+					</ul>
+					</ul>
+					<ul class="faqs__list">
+						<li class="faqs__item">Do you help me find a job?
+							<i class="fa-solid fa-chevron-down"></i>
+						</li>
+						<div class="faqs__list-desc-wrapper"><p class="faqs__desc">Ipsum lorem a pariatur accusantium consequuntur molestiae Rem necessitatibus dignissimos est laudantium quaerat Ipsum libero cum quia quas qui Voluptatem laboriosam maiores vero ipsum ratione explicabo Nam soluta est consectetur vel hic facere? Fuga nemo modi beatae facere quos, eveniet saepe nisi Magni aliquam expedita placeat fuga soluta Laboriosam recusandae incidunt optio veritatis soluta Beatae quia asperiores provident eaque quos. Quidem maiores voluptatum earum mollitia aliquid beatae Voluptatem ut et et unde dignissimos Labore officia harum laborum explicabo reiciendis. Fugiat quidem dolores nemo impedit ipsam. Corrupti dolorum ea nesciunt deserunt dolorem reiciendis similique Maxime voluptas explicabo ipsa voluptatum odit. Sunt</p></div>
+					</ul>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="instructors" class="instructors py-3">
+			<div class="instructors__content-wrapper container flow-content--l">
+				<header class="instructors__header  text-center flow-content--xs">
+					<h2 class="instructors__title">Our Instructors</h2>
+					<p class="instructors__desc"> Our instructors all have 5+ years working as a web developer in the industry </p>
+				</header>
+
+				<div class="instructors__wrapper grid grid--1x4">
+					<div class="instructors__card flow-content--s">
+						<img class="instructors__card-img" src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+						<h3 class="instructors__card-name">John Doe</h3>
+						<p class="instructors__card-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam. </p>
+						<ul class="instructors__card-socials-list">
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="instructors__card flow-content--s">
+						<img class="instructors__card-img" src="https://randomuser.me/api/portraits/women/11.jpg" alt="">
+						<h3 class="instructors__card-name">Jane Doe</h3>
+						<p class="instructors__card-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam. </p>
+						<ul class="instructors__card-socials-list">
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="instructors__card flow-content--s">
+						<img class="instructors__card-img" src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+						<h3 class="instructors__card-name">Steve Smith</h3>
+						<p class="instructors__card-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam. </p>
+						<ul class="instructors__card-socials-list">
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="instructors__card flow-content--s">
+						<img class="instructors__card-img" src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+						<h3 class="instructors__card-name">Sara Smith</h3>
+						<p class="instructors__card-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam. </p>
+						<ul class="instructors__card-socials-list">
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="contact__content-wrapper py-3">
+				<div class="contact__content grid grid--1x2 container">
+					<ul class="contact__list flow-content--m">
+						<h3 class="contact__list-title">Contact Info</h3>
+						<li class="contact__list-item"> <strong>Main Location: </strong>50 Main st Boston MA </li>
+						<li class="contact__list-item"> <strong>Enrollment Phone:</strong> (555) 555-5555 </li>
+						<li class="contact__list-item"> <strong>Student Phone:</strong> (333) 333-3333 </li>
+						<li class="contact__list-item"> <strong>Enrollment Email:</strong> (555) enroll@frontendbc.test </li>
+						<li class="contact__list-item"> <strong>Student Email:</strong> student@frontendbc.test </li>
+					</ul>
+					<div class="contact__map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.8598859794583!2d-117.7404808!3d33.6348748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce7dfda139729%3A0xe4924ca874c00e84!2sLearningFuze!5e0!3m2!1sen!2sae!4v1665552505218!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__content">
+				Copyright &copy; 2022 Frontend Bootcamp
+				<a href="#" class="btn"><i class="fa-solid fa-arrow-up"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>

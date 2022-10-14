@@ -1,0 +1,149 @@
+@import 'mixins';
+
+//tablets
+
+@include media(55em) {
+
+	html  {
+		font-size: 75%;
+	}
+
+	.grid--1x2,
+	.grid--1x3,
+	.grid--1x4 {
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+		text-align: center;
+
+		img  {
+			width: 50%;
+		}
+
+		//hero
+		.hero__desc  {
+			max-width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		
+		// fundamentals and react
+
+		.fundamentals__link,
+		.react__btn-wrapper  {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+		//instructor cards
+
+		.instructors__card {
+			img  {
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+		// learning cards
+
+		.learning,
+		.learning__card-wrapper {
+			padding: 0;
+
+			.grid {
+				gap: 0;
+			}
+		}
+
+		//modal
+
+		.modal {
+			&__content {
+				width: 80% !important;
+				min-height: 300px !important;
+				
+			}
+		}
+
+		//footer
+
+		.footer  {
+			padding: 2rem !important;
+
+			i  {
+				font-size: 2rem !important;
+				width: 40px !important;
+				height: 40px !important;
+			}
+		}
+		
+
+}
+
+
+//mobile
+
+@include media(37em) {
+	html {
+		font-size: 62.5%;
+	}
+
+	.hero {
+		&__list {
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translateX(-100%);
+			flex-direction: column;
+
+			a  {
+				font-size: 3.5rem;
+			}
+			
+		}
+		.bars,
+		.close {
+			display: block !important;
+			color: #fff;
+			font-size: 1.3rem;
+		}
+
+		.close  {
+			position: absolute;
+			top: 2rem;
+			right: 6rem;
+		}
+	}
+
+	//contact
+
+	.contact iframe  {
+		display: none;
+	}
+
+	//modal
+
+	.modal {
+		&__content {
+			min-height: 200px !important;
+			
+		}
+	}
+
+	// footer
+
+	.footer {
+		i {
+			font-size: 1.5rem !important;
+			width: 30px !important;
+			height: 30px!important;
+		}
+	}
+}
